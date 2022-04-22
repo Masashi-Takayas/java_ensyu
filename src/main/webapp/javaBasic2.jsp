@@ -9,6 +9,17 @@
     // ※この処理は変更しないでください。
     int[] bScore = { 42, 95, 60 };
 
+    double sum;
+    double japanese;
+    double math;
+    double english;
+    
+ 	japanese = ((double)aScore[0]+bScore[0])/2;
+ 	math = ((double)aScore[1]+bScore[1])/2;
+ 	english = ((double)aScore[2]+bScore[2])/2;
+ 	sum = (double)japanese+math+english;
+  
+    
     // ※以降のコメントを参考に、必要な処理を実装してください
  
     // 各平均を入れるための配列
@@ -56,22 +67,23 @@ table th, table td {
     </tr>
     <tr>
       <td>Aさん</td>
-      <td>xxx</td>
-      <td>xxx</td>
-      <td>xxx</td>
+      <td>100</td>
+      <td>54</td>
+      <td>69</td>
     </tr>
     <tr>
       <td>Bさん</td>
-      <td>xxx</td>
-      <td>xxx</td>
-      <td>xxx</td>
+      <td>42</td>
+      <td>95</td>
+      <td>60</td>
     </tr>
   </table>
 
   <h2>平均点</h2>
-  <p>国語：xxx</p>
-  <p>数学：xxx</p>
-  <p>英語：xxx</p>
-  <p>合計：xxx</p>
+  <p>国語：<%out.println(japanese) ;%></p>
+  <p>数学：<%out.println(math) ;%></p>
+  <p>英語：<%out.println(english) ;%></p>
+  <p>合計：<%out.println(sum) ;%></p>
+  
 </body>
 </html>
